@@ -1,0 +1,51 @@
+  
+  .loader {
+    margin: 0 auto;
+    width: 6rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    > div {
+      height: 100%;
+      width: 0.8rem;
+      display: inline-block;
+      float: left;
+      margin-left: 0.2rem;
+      -webkit-animation: delay 0.8s infinite ease-in-out;
+      animation: delay 0.8s infinite ease-in-out;
+    }
+    
+    &__bar1{
+      background-color: #754fa0 ;
+    }
+
+    &__bar2{
+      background-color: #09b7bf;
+    }
+    &__bar3{
+      background-color: #90d36b;
+    }
+    &__bar4{
+      background-color: #f2d40d;
+    }
+    &__bar5{
+      background-color: #fcb12b;
+    }
+    &__bar6{
+      background-color: #ed1b72;
+    }
+  }
+  
+  @keyframes delay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.05);
+      -webkit-transform: scaleY(0.05);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
