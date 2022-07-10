@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "European Quest",
+      "duration": 25,
+      "countries": ["Poland", "Austria", "Finland"],
+      "score": 4.6,
+      "price": {
+        "from": 2877,
+        "discount": 3385
+      },
+      "image": "https://picsum.photos/600/400"
+    },
+    {
+      "id": 2,
+      "title": "Simply Italy",
+      "duration": 15,
+      "countries": ["Italy", "Austria"],
+      "score": 4.0,
+      "price": {
+        "from": 2877,
+        "discount": 3385
+      },
+      "image": "https://picsum.photos/600/400"
+    },
+    {
+      "id": 3,
+      "title": "Italian Expresso",
+      "duration": 10,
+      "countries": ["Italy"],
+      "score": 4.4,
+      "price": {
+        "from": 2877,
+        "discount": 3385 
+      },
+      "image": "https://picsum.photos/600/400"
+    },
+    {
+      "id": 4,
+      "title": "Italian Expresso",
+      "duration": 10,
+      "countries": ["Italy"],
+      "score": 4.3,
+      "price": {
+        "from": 2877,
+        "discount": 3385
+      },
+      "image": "https://picsum.photos/600/400"
+    },
+    {
+      "id": 5,
+      "title": "Italian Expresso",
+      "duration": 10,
+      "countries": ["Italy"],
+      "score": 4.9,
+      "price": {
+        "from": 2877,
+        "discount": 3385
+      },
+      "image": "https://picsum.photos/600/400"
+    }
+  ]
+}
