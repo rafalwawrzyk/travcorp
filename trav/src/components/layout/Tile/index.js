@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import "./styles.scss";
-
 import * as c from "components";
+import "./styles.scss";
 
 const variants = {
   visible: { opacity: 1 },

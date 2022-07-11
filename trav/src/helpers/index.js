@@ -15,3 +15,7 @@ export const currFormatter = (number, curr = "EUR") => {
     .format(number)
     .replace(/\.00$/, "");
 };
+
+export const pluralFormat = (data, plural, single) => {
+  return data !== 1 ? `${data} ${plural}` : `${data} ${single}`;
+}
