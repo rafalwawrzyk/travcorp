@@ -5,7 +5,7 @@ import "./styles.scss";
 export const TileImage = ({ image, alt }) => (
   <div className="tile-image">
     {image ? (
-      <img src={image} alt={alt === "" && "image"} />
+      <img src={image} alt={alt === "" ? "image" : alt} />
     ) : (
       <div className="tile-image__placeholder"></div>
     )}
