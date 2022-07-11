@@ -1,6 +1,6 @@
 /**
  * Round score based on data
- * @param {number} score 
+ * @param {number} score
  * @returns rounded score if decimals greater than 0.5 or flored if less
  */
 
@@ -18,8 +18,8 @@ export const roundScore = (score) => {
 
 /**
  * Price formatter based on data, with possibility to change currency
- * @param {number} number 
- * @param {string} curr 
+ * @param {number} number
+ * @param {string} curr
  * @returns formated price depended on locale and remove last digits to fit design
  */
 
@@ -33,9 +33,10 @@ export const currFormatter = (number, curr = "EUR") => {
  * Plural format of data depended on data
  * @param {number} data
  * @param {string} plural
- * @param {string} single    
+ * @param {string} single
  * @returns string with plural or singular format
  */
+
 export const pluralFormat = (data, plural, single) => {
   return data !== 1 ? `${data} ${plural}` : `${data} ${single}`;
-}
+};
