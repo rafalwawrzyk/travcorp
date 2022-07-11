@@ -1,0 +1,30 @@
+.tile-description-price {
+    margin-top: 0.7rem;
+
+    &__from {
+        font-weight: bold;
+        font-size: 1.1rem;
+        position: relative;
+        margin-right: 1rem;
+    
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 0.4rem;
+          height: 0.4rem;
+          right: -0.7rem;
+          top: 50%;
+          border-radius: 50%;
+          background-color:#6f6f6f;
+          transform: translateY(-50%);
+        }
+      }
+    
+      &__discount {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #6f6f6f;
+        text-decoration: line-through;
+      }
+  }

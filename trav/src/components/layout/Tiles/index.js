@@ -4,6 +4,8 @@ import useFetch from "hooks/useFetch";
 import "./styles.scss";
 
 export const Tiles = () => {
+
+  // .env file should be excluded in gitignore but to make it easier I decide to push it to repo directly
   const { data, loading, error } = useFetch(process.env.REACT_APP_API);
 
   if (error) {

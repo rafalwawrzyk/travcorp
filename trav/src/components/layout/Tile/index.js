@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import ReactStars from "react-rating-stars-component";
-import { roundScore, currFormatter } from "helpers";
 import "./styles.scss";
+
+import * as c from "components";
 
 const variants = {
   visible: { opacity: 1 },
@@ -11,7 +11,7 @@ const variants = {
 };
 
 export const Tile = ({ trip }) => {
-  const { title, duration, tripCountries, score, price, image } = trip || {};
+  const { image } = trip || {};
 
   return (
     <motion.div
@@ -21,36 +21,9 @@ export const Tile = ({ trip }) => {
       variants={variants}
       className="tile"
     >
-      <div className="tile__image">
-        <img src={image} alt="trip" />
-      </div>
-      <div className="tile__description">
-        <p className="tile__description-trip">
-          {`${tripCountries.length} ${
-            tripCountries.length > 1 ? "Countries" : "Country"
-          }, ${duration} ${duration > 1 ? "Days" : "Day"}`}
-        </p>
-        <h3 className="tile__description-title">{title}</h3>
-        <div className="tile__score-container">
-          <ReactStars
-            count={5}
-            value={roundScore(score)}
-            edit={false}
-            isHalf={true}
-            size={12}
-            activeColor="#ffd700"
-          />
-          <span className="tile__score-rating">{score}</span>
-        </div>
-        <p className="tile__description-price">
-          <span className="tile__price-from">
-            From {currFormatter(price.from)}
-          </span>
-          <span className="tile__price-discount">
-            Price {currFormatter(price.discount)}
-          </span>
-        </p>
-      </div>
+      <c.TileImage image={image} />
+      <c.TileDescription trip={trip} />
+      
     </motion.div>
   );
 };

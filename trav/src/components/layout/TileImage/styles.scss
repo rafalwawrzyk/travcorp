@@ -1,0 +1,11 @@
+.tile-image {
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 22rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      display: block;
+      transition: .4s;
+    }
+  }

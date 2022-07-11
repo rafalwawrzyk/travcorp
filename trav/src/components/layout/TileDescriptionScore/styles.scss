@@ -1,0 +1,11 @@
+.tile-description-score {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+
+  &__rating {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+  }
+}
