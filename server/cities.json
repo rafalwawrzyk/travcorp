@@ -3,8 +3,8 @@
     {
       "id": 1,
       "title": "European Quest",
+      "tripCountries": ["Croatia", "Montenegro", "Albania", "Greece"],
       "duration": 25,
-      "countries": ["Poland", "Austria", "Finland"],
       "score": 4.6,
       "price": {
         "from": 2877,
@@ -15,32 +15,32 @@
     {
       "id": 2,
       "title": "Simply Italy",
+      "tripCountries": ["Germany", "Austria", "Italy"],
       "duration": 15,
-      "countries": ["Italy", "Austria"],
       "score": 4.0,
       "price": {
         "from": 2877,
-        "discount": 3385
+        "discount": 3325
       },
       "image": "https://picsum.photos/600/400"
     },
     {
       "id": 3,
       "title": "Italian Expresso",
+      "tripCountries": ["Italy"],
       "duration": 10,
-      "countries": ["Italy"],
       "score": 4.4,
       "price": {
         "from": 2877,
-        "discount": 3385 
+        "discount": 4002
       },
       "image": "https://picsum.photos/600/400"
     },
     {
       "id": 4,
       "title": "Italian Expresso",
+      "tripCountries": ["Italy"],
       "duration": 10,
-      "countries": ["Italy"],
       "score": 4.3,
       "price": {
         "from": 2877,
@@ -51,11 +51,11 @@
     {
       "id": 5,
       "title": "Italian Expresso",
-      "duration": 10,
-      "countries": ["Italy"],
-      "score": 4.9,
+      "tripCountries": [],
+      "duration": 1,
+      "score": 4.5,
       "price": {
-        "from": 2877,
+        "from": 287700,
         "discount": 3385
       },
       "image": "https://picsum.photos/600/400"
