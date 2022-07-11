@@ -10,7 +10,8 @@ const variants = {
 };
 
 export const Tile = ({ trip }) => {
-  const { image } = trip || {};
+
+  const { image, imageAlt = "image" } = trip || {};
 
   return (
     <motion.div
@@ -20,7 +21,7 @@ export const Tile = ({ trip }) => {
       variants={variants}
       className="tile"
     >
-      <c.TileImage image={image} />
+      <c.TileImage image={image} alt={imageAlt} />
       <c.TileDescription trip={trip} />
       
     </motion.div>
@@ -40,5 +41,6 @@ Tile.propTypes = {
       discount: PropTypes.number,
     }).isRequired,
     image: PropTypes.string.isRequired,
+    imageAlt: PropTypes.string.isRequired
   }),
 };

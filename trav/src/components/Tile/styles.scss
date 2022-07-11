@@ -1,6 +1,8 @@
 .tile {
   border-radius: 0.5rem;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
   &:hover {
     img {
       transform: scale(1.2);
